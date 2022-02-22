@@ -1,0 +1,282 @@
+===================================================================
+ Info                                                              
+===================================================================
+           PID: 1384 (csd-keyboard)
+           UID: 1000 (ray)
+           GID: 1000 (ray)
+        Signal: 5 (TRAP)
+     Timestamp: Tue 2022-02-22 11:32:15 CST (25s ago)
+  Command Line: csd-keyboard
+    Executable: /usr/libexec/csd-keyboard
+ Control Group: /user.slice/user-1000.slice/session-c2.scope
+          Unit: session-c2.scope
+         Slice: user-1000.slice
+       Session: c2
+     Owner UID: 1000 (ray)
+       Boot ID: 1db91044850f4a399536fa5cc2c6aae2
+    Machine ID: ba32ae59052b4bffb66e765e502b8a0f
+      Hostname: ray-ThinkPad-T14-Gen-2a
+       Storage: /var/lib/systemd/coredump/core.csd-keyboard.1000.1db91044850f4a399536fa5cc2c6aae2.1384.1645551135000000000000.lz4
+       Message: Process 1384 (csd-keyboard) of user 1000 dumped core.
+                
+                Stack trace of thread 1384:
+                #0  0x00007f8d55f97295 n/a (libglib-2.0.so.0 + 0x58295)
+                #1  0x00007f8d55f99c7c g_log_writer_default (libglib-2.0.so.0 + 0x5ac7c)
+                #2  0x00007f8d55f97ed7 g_log_structured_array (libglib-2.0.so.0 + 0x58ed7)
+                #3  0x00007f8d55f98904 g_log_structured_standard (libglib-2.0.so.0 + 0x59904)
+                #4  0x00007f8d56311cea n/a (libgdk-3.so.0 + 0x68cea)
+                #5  0x00007f8d5631ed13 n/a (libgdk-3.so.0 + 0x75d13)
+                #6  0x00007f8d55e4328b _XError (libX11.so.6 + 0x4128b)
+                #7  0x00007f8d55e3fff7 n/a (libX11.so.6 + 0x3dff7)
+                #8  0x00007f8d55e40095 n/a (libX11.so.6 + 0x3e095)
+                #9  0x00007f8d55e4101d _XReply (libX11.so.6 + 0x3f01d)
+                #10 0x00007f8d55e267e8 XGetWindowProperty (libX11.so.6 + 0x247e8)
+                #11 0x00007f8d5632fb64 n/a (libgdk-3.so.0 + 0x86b64)
+                #12 0x00007f8d5633088d n/a (libgdk-3.so.0 + 0x8788d)
+                #13 0x00007f8d5631905f n/a (libgdk-3.so.0 + 0x7005f)
+                #14 0x00007f8d563193ac n/a (libgdk-3.so.0 + 0x703ac)
+                #15 0x00007f8d562e10f4 gdk_display_get_event (libgdk-3.so.0 + 0x380f4)
+                #16 0x00007f8d563190f6 n/a (libgdk-3.so.0 + 0x700f6)
+                #17 0x00007f8d55f9117d g_main_context_dispatch (libglib-2.0.so.0 + 0x5217d)
+                #18 0x00007f8d55f91400 n/a (libglib-2.0.so.0 + 0x52400)
+                #19 0x00007f8d55f916f3 g_main_loop_run (libglib-2.0.so.0 + 0x526f3)
+                #20 0x00007f8d565fc37d gtk_main (libgtk-3.so.0 + 0x24e37d)
+                #21 0x000055c74cf1339b main (csd-keyboard + 0x539b)
+                #22 0x00007f8d55bea0b3 __libc_start_main (libc.so.6 + 0x270b3)
+                #23 0x000055c74cf134fe _start (csd-keyboard + 0x54fe)
+                
+                Stack trace of thread 1398:
+                #0  0x00007f8d55cd8aff __GI___poll (libc.so.6 + 0x115aff)
+                #1  0x00007f8d55f9136e n/a (libglib-2.0.so.0 + 0x5236e)
+                #2  0x00007f8d55f914a3 g_main_context_iteration (libglib-2.0.so.0 + 0x524a3)
+                #3  0x00007f8d55f914f1 n/a (libglib-2.0.so.0 + 0x524f1)
+                #4  0x00007f8d55fbaad1 n/a (libglib-2.0.so.0 + 0x7bad1)
+                #5  0x00007f8d554a7609 start_thread (libpthread.so.0 + 0x9609)
+                #6  0x00007f8d55ce5293 __clone (libc.so.6 + 0x122293)
+                
+                Stack trace of thread 1401:
+                #0  0x00007f8d55cd8aff __GI___poll (libc.so.6 + 0x115aff)
+                #1  0x00007f8d55f9136e n/a (libglib-2.0.so.0 + 0x5236e)
+                #2  0x00007f8d55f916f3 g_main_loop_run (libglib-2.0.so.0 + 0x526f3)
+                #3  0x00007f8d561e6f8a n/a (libgio-2.0.so.0 + 0x11ef8a)
+                #4  0x00007f8d55fbaad1 n/a (libglib-2.0.so.0 + 0x7bad1)
+                #5  0x00007f8d554a7609 start_thread (libpthread.so.0 + 0x9609)
+                #6  0x00007f8d55ce5293 __clone (libc.so.6 + 0x122293)
+                
+                Stack trace of thread 1441:
+                #0  0x00007f8d55cd8aff __GI___poll (libc.so.6 + 0x115aff)
+                #1  0x00007f8d55f9136e n/a (libglib-2.0.so.0 + 0x5236e)
+                #2  0x00007f8d55f914a3 g_main_context_iteration (libglib-2.0.so.0 + 0x524a3)
+                #3  0x00007f8d5251f99d n/a (libdconfsettings.so + 0xa99d)
+                #4  0x00007f8d55fbaad1 n/a (libglib-2.0.so.0 + 0x7bad1)
+                #5  0x00007f8d554a7609 start_thread (libpthread.so.0 + 0x9609)
+                #6  0x00007f8d55ce5293 __clone (libc.so.6 + 0x122293)
+===================================================================
+ GDB Log                                                           
+===================================================================
+[New LWP 1384]
+[New LWP 1398]
+[New LWP 1401]
+[New LWP 1441]
+
+warning: Section `.reg-xstate/1384' in core file too small.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `csd-keyboard'.
+Program terminated with signal SIGTRAP, Trace/breakpoint trap.
+
+warning: Section `.reg-xstate/1384' in core file too small.
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+[Current thread is 1 (Thread 0x7f8d52a99a80 (LWP 1384))]
+
+===================================================================
+ GDB Backtrace                                                     
+===================================================================
+[New LWP 1384]
+[New LWP 1398]
+[New LWP 1401]
+[New LWP 1441]
+
+warning: Section `.reg-xstate/1384' in core file too small.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `csd-keyboard'.
+Program terminated with signal SIGTRAP, Trace/breakpoint trap.
+
+warning: Section `.reg-xstate/1384' in core file too small.
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+[Current thread is 1 (Thread 0x7f8d52a99a80 (LWP 1384))]
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#1  0x00007f8d55f99c7c in g_log_writer_default () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#2  0x00007f8d55f97ed7 in g_log_structured_array () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#3  0x00007f8d55f98904 in g_log_structured_standard () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#4  0x00007f8d56311cea in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#5  0x00007f8d5631ed13 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#6  0x00007f8d55e4328b in _XError () from /lib/x86_64-linux-gnu/libX11.so.6
+#7  0x00007f8d55e3fff7 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+#8  0x00007f8d55e40095 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+#9  0x00007f8d55e4101d in _XReply () from /lib/x86_64-linux-gnu/libX11.so.6
+#10 0x00007f8d55e267e8 in XGetWindowProperty () from /lib/x86_64-linux-gnu/libX11.so.6
+#11 0x00007f8d5632fb64 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#12 0x00007f8d5633088d in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#13 0x00007f8d5631905f in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#14 0x00007f8d563193ac in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#15 0x00007f8d562e10f4 in gdk_display_get_event () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#16 0x00007f8d563190f6 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#17 0x00007f8d55f9117d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#18 0x00007f8d55f91400 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#19 0x00007f8d55f916f3 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#20 0x00007f8d565fc37d in gtk_main () from /lib/x86_64-linux-gnu/libgtk-3.so.0
+#21 0x000055c74cf1339b in main ()
+
+===================================================================
+ GDB Backtrace (all threads)                                       
+===================================================================
+[New LWP 1384]
+[New LWP 1398]
+[New LWP 1401]
+[New LWP 1441]
+
+warning: Section `.reg-xstate/1384' in core file too small.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Core was generated by `csd-keyboard'.
+Program terminated with signal SIGTRAP, Trace/breakpoint trap.
+
+warning: Section `.reg-xstate/1384' in core file too small.
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+[Current thread is 1 (Thread 0x7f8d52a99a80 (LWP 1384))]
+
+Thread 4 (Thread 0x7f8d513eb700 (LWP 1441)):
+warning: Section `.reg-xstate/1441' in core file too small.
+#0  0x00007f8d55cd8aff in __GI___poll (fds=0x55c74eb73780, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+        resultvar = 18446744073709551100
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+#1  0x00007f8d55f9136e in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f8d55f914a3 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f8d5251f99d in ?? () from /usr/lib/x86_64-linux-gnu/gio/modules/libdconfsettings.so
+No symbol table info available.
+#4  0x00007f8d55fbaad1 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f8d554a7609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+        ret = <optimized out>
+        pd = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140244930180864, 17072417839656287, 140730107599790, 140730107599791, 140730107599936, 140244930178176, -61355792363016865, -61346345509180065}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+#6  0x00007f8d55ce5293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+No locals.
+
+Thread 3 (Thread 0x7f8d51c71700 (LWP 1401)):
+warning: Section `.reg-xstate/1401' in core file too small.
+#0  0x00007f8d55cd8aff in __GI___poll (fds=0x55c74eb35810, nfds=2, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+        resultvar = 18446744073709551100
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+#1  0x00007f8d55f9136e in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f8d55f916f3 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f8d561e6f8a in ?? () from /lib/x86_64-linux-gnu/libgio-2.0.so.0
+No symbol table info available.
+#4  0x00007f8d55fbaad1 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f8d554a7609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+        ret = <optimized out>
+        pd = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140244939118336, 17072417839656287, 140730107597214, 140730107597215, 140730107597360, 140244939115648, -61356287357997729, -61346345509180065}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+#6  0x00007f8d55ce5293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+No locals.
+
+Thread 2 (Thread 0x7f8d52472700 (LWP 1398)):
+warning: Section `.reg-xstate/1398' in core file too small.
+#0  0x00007f8d55cd8aff in __GI___poll (fds=0x55c74eb29540, nfds=1, timeout=-1) at ../sysdeps/unix/sysv/linux/poll.c:29
+        resultvar = 18446744073709551100
+        sc_cancel_oldtype = 0
+        sc_ret = <optimized out>
+#1  0x00007f8d55f9136e in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f8d55f914a3 in g_main_context_iteration () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f8d55f914f1 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f8d55fbaad1 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#5  0x00007f8d554a7609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+        ret = <optimized out>
+        pd = <optimized out>
+        unwind_buf = {cancel_jmp_buf = {{jmp_buf = {140244947511040, 17072417839656287, 140730107596782, 140730107596783, 140730107596928, 140244947508352, -61357386332754593, -61346345509180065}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x0, 0x0}, data = {prev = 0x0, cleanup = 0x0, canceltype = 0}}}
+        not_first_call = 0
+#6  0x00007f8d55ce5293 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+No locals.
+
+Thread 1 (Thread 0x7f8d52a99a80 (LWP 1384)):
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#1  0x00007f8d55f99c7c in g_log_writer_default () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#2  0x00007f8d55f97ed7 in g_log_structured_array () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#3  0x00007f8d55f98904 in g_log_structured_standard () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#4  0x00007f8d56311cea in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#5  0x00007f8d5631ed13 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#6  0x00007f8d55e4328b in _XError () from /lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#7  0x00007f8d55e3fff7 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#8  0x00007f8d55e40095 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#9  0x00007f8d55e4101d in _XReply () from /lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#10 0x00007f8d55e267e8 in XGetWindowProperty () from /lib/x86_64-linux-gnu/libX11.so.6
+No symbol table info available.
+#11 0x00007f8d5632fb64 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#12 0x00007f8d5633088d in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#13 0x00007f8d5631905f in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#14 0x00007f8d563193ac in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#15 0x00007f8d562e10f4 in gdk_display_get_event () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#16 0x00007f8d563190f6 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+No symbol table info available.
+#17 0x00007f8d55f9117d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#18 0x00007f8d55f91400 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#19 0x00007f8d55f916f3 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+No symbol table info available.
+#20 0x00007f8d565fc37d in gtk_main () from /lib/x86_64-linux-gnu/libgtk-3.so.0
+No symbol table info available.
+#21 0x000055c74cf1339b in main ()
+No symbol table info available.
+#0  0x00007f8d55f97295 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#1  0x00007f8d55f99c7c in g_log_writer_default () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#2  0x00007f8d55f97ed7 in g_log_structured_array () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#3  0x00007f8d55f98904 in g_log_structured_standard () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#4  0x00007f8d56311cea in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#5  0x00007f8d5631ed13 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#6  0x00007f8d55e4328b in _XError () from /lib/x86_64-linux-gnu/libX11.so.6
+#7  0x00007f8d55e3fff7 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+#8  0x00007f8d55e40095 in ?? () from /lib/x86_64-linux-gnu/libX11.so.6
+#9  0x00007f8d55e4101d in _XReply () from /lib/x86_64-linux-gnu/libX11.so.6
+#10 0x00007f8d55e267e8 in XGetWindowProperty () from /lib/x86_64-linux-gnu/libX11.so.6
+#11 0x00007f8d5632fb64 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#12 0x00007f8d5633088d in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#13 0x00007f8d5631905f in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#14 0x00007f8d563193ac in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#15 0x00007f8d562e10f4 in gdk_display_get_event () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#16 0x00007f8d563190f6 in ?? () from /lib/x86_64-linux-gnu/libgdk-3.so.0
+#17 0x00007f8d55f9117d in g_main_context_dispatch () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#18 0x00007f8d55f91400 in ?? () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#19 0x00007f8d55f916f3 in g_main_loop_run () from /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#20 0x00007f8d565fc37d in gtk_main () from /lib/x86_64-linux-gnu/libgtk-3.so.0
+#21 0x000055c74cf1339b in main ()
